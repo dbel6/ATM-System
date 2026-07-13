@@ -32,7 +32,7 @@ The GUI layer is built entirely in Java Swing. LoginFrame handles authentication
 - Managing the database relationships meant deletes had to be handled carefully to avoid orphaned records across the four linked tables
 
 ## Solution
-```
+```java
 // Authentication checks card number and PIN against the database
 Card card = cardDAO.login(cardNumber, pinInput);
 if (card != null) {
