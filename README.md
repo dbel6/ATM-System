@@ -54,6 +54,34 @@ if (amount > account.getBalance()) {
 }
 ```
 
+## Results
+- Full CRUD operations working across all four database tables via the GUI
+- Login authentication correctly accepts valid credentials and rejects invalid ones
+- Withdrawals, deposits and transfers all update account balances correctly
+- Input validation catches all invalid entries including wrong types, out-of-range values and malformed emails
+- All five test cases pass as documented
+
+## Next Steps
+- Add password hashing for PIN storage rather than storing plain text in the database
+- Implement a transaction history view filtered by date range
+- Add an admin panel seperate from the standard user login for managing all customers and accounts
+- Replace the MySQL root user connection with a dedicated limited permission database user
+- Package the application as an executable JAR with a setup script for easier deployment
+
+## How to Run
+Requirements: Java 21+, MySQL running locally on port 3306
+1. Create a MySQL database named ATMSystem
+2. Import the database dump to set up the tables and sample data
+3. The default connection in DBConnection.java uses root with no password. Update this if your setup differs
+4. Run the application
+```
+java -cp ".:lib/mysql-connector-j-9.6.0.jar" atmsystem.Main
+```
+On Windows use a semicolon instead of a colon:
+```bash
+java -cp ".;lib/mysql-connector-j-9.6.0.jar" atmsystem.Main
+```
+
 ## What I Learned
 - Designing structured applications using OOP
 - Handling user input and errors effectively
