@@ -74,9 +74,9 @@ Requirements: Java 21+, MySQL running locally on port 3306
 2. Import the database dump to set up the tables and sample data
 3. The default connection in DBConnection.java uses root with no password. Update this if your setup differs
 4. Run the application
-```
-java -cp ".:lib/mysql-connector-j-9.6.0.jar" atmsystem.Main
 ```bash
+java -cp ".:lib/mysql-connector-j-9.6.0.jar" atmsystem.Main
+```
 On Windows use a semicolon instead of a colon:
 ```bash
 java -cp ".;lib/mysql-connector-j-9.6.0.jar" atmsystem.Main
