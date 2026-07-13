@@ -17,10 +17,10 @@ Banks need a reliable way to manage customer accounts and process financial tran
 - Produced the full project documentation including requirements, ER diagram, test cases and code snippets
 
 ## Approach
-The system is structed into three layers:
-The model layer holds the four data classes: Customer, Account, Card and Transaction, each with full getters and setters.
+The system is structed into three layers:\
+The model layer holds the four data classes: Customer, Account, Card and Transaction, each with full getters and setters.\
 The DAO layer connects to MySQL via JDBC through DBConnection.java and provides create, read, update and delete methods for each entity.
-TransactionDAO uses an inner join across the Transaction, Account and Customer tables to retrieve enriched transaction records.
+TransactionDAO uses an inner join across the Transaction, Account and Customer tables to retrieve enriched transaction records.\
 The GUI layer is built entirely in Java Swing. LoginFrame handles authentication by validating a card number and PIN against the database. MainFrame provides tabbed navigation between the four management panels. Each panel displays a live table of records and a form for adding, updating or deleting entries, with confirmation dialogs and error messages for invalid input.
 
 ### Database tables:
