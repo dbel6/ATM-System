@@ -25,7 +25,7 @@ The GUI layer is built entirely in Java Swing. LoginFrame handles authentication
 
 ### Database tables:
 | Table | Key Fields |
-| --- | --- |
+| --- | --- | --- |
 | Customer | customerID | firstname | lastname | address | phone | email |
 | Account | accountID |
 | Card | cardNumber |
