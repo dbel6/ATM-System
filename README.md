@@ -68,7 +68,7 @@ if (amount > account.getBalance()) {
 - Replace the MySQL root user connection with a dedicated limited permission database user
 - Package the application as an executable JAR with a setup script for easier deployment
 
-## How to Run
+## How to run
 Requirements: Java 21+, MySQL running locally on port 3306
 1. Create a MySQL database named ATMSystem
 2. Import the database dump to set up the tables and sample data
@@ -82,7 +82,28 @@ On Windows use a semicolon instead of a colon:
 java -cp ".;lib/mysql-connector-j-9.6.0.jar" atmsystem.Main
 ```
 
-## What I Learned
-- Designing structured applications using OOP
-- Handling user input and errors effectively
-- Building functional and interactive programs
+## Project Structure
+├── lib/
+│   └── mysql-connector-j-9.6.0.jar     # MySQL JDBC driver
+├── src/atmsystem/
+│   ├── Main.java                        # Entry point, launches LoginFrame
+│   ├── dao/
+│   │   ├── AccountDAO.java              # CRUD operations for Account table
+│   │   ├── CardDAO.java                 # CRUD operations for Card table, login method
+│   │   ├── CustomerDAO.java             # CRUD operations for Customer table
+│   │   └── TransactionDAO.java          # CRUD operations for Transaction table, inner join
+│   ├── db/
+│   │   └── DBConnection.java            # MySQL connection via JDBC
+│   ├── gui/
+│   │   ├── LoginFrame.java              # Card number and PIN authentication screen
+│   │   ├── MainFrame.java               # Main window with tab navigation
+│   │   ├── AccountPanel.java            # Account management panel
+│   │   ├── CardPanel.java               # Card management panel
+│   │   ├── CustomerPanel.java           # Customer management panel
+│   │   └── TransactionPanel.java        # Transaction management panel
+│   └── model/
+│       ├── Account.java                 # Account data model
+│       ├── Card.java                    # Card data model
+│       ├── Customer.java                # Customer data model
+│       └── Transaction.java             # Transaction data model
+└── README.md
