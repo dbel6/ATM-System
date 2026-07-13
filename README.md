@@ -76,7 +76,7 @@ Requirements: Java 21+, MySQL running locally on port 3306
 4. Run the application
 ```
 java -cp ".:lib/mysql-connector-j-9.6.0.jar" atmsystem.Main
-```
+```bash
 On Windows use a semicolon instead of a colon:
 ```bash
 java -cp ".;lib/mysql-connector-j-9.6.0.jar" atmsystem.Main
