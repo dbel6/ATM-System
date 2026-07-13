@@ -83,6 +83,7 @@ java -cp ".;lib/mysql-connector-j-9.6.0.jar" atmsystem.Main
 ```
 
 ## Project Structure
+```
 ├── lib/
 │   └── mysql-connector-j-9.6.0.jar     # MySQL JDBC driver
 ├── src/atmsystem/
@@ -107,3 +108,11 @@ java -cp ".;lib/mysql-connector-j-9.6.0.jar" atmsystem.Main
 │       ├── Customer.java                # Customer data model
 │       └── Transaction.java             # Transaction data model
 └── README.md
+```
+
+## Built with
+- Java 21
+- Java Swing
+- MySQL
+- JDBC with MySQL Connector/J 9.6.0
+- IntelliJ IDEA
