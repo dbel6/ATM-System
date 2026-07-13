@@ -24,8 +24,8 @@ TransactionDAO uses an inner join across the Transaction, Account and Customer t
 The GUI layer is built entirely in Java Swing. LoginFrame handles authentication by validating a card number and PIN against the database. MainFrame provides tabbed navigation between the four management panels. Each panel displays a live table of records and a form for adding, updating or deleting entries, with confirmation dialogs and error messages for invalid input.
 
 ### Database tables:
-| Table | Key Fields | |
-| --- | --- | --- |
+| Table | Key Fields | | | |
+| --- | --- | --- | --- | --- |
 | Customer | customerID | firstname | lastname | address | phone | email |
 | Account | accountID |
 | Card | cardNumber |
