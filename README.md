@@ -27,9 +27,9 @@ The GUI layer is built entirely in Java Swing. LoginFrame handles authentication
 | Table | Key Fields | | | | | |
 | --- | --- | --- | --- | --- | --- | --- |
 | Customer | customerID | firstname | lastname | address | phone | email |
-| Account | accountID |
-| Card | cardNumber |
-| Transaction | transactionID |
+| Account | accountID | customerID | type | balance |
+| Card | cardNumber | accountID | pin | expirationDate | cvc |
+| Transaction | transactionID | accountID | type | amount | dateOfTransaction | targetAccountID |
 
 ## Challenges
 - Keeping the GUI panels in sync after CRUD operations required refreshing combo boxes and tables across panels whenever related data changed, such as updating the account dropdown in the Card panel after a new account is added
