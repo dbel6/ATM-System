@@ -76,10 +76,12 @@ if (amount > account.getBalance()) {
 
 ## How to run
 Requirements: Java 21+, MySQL running locally on port 3306
-1. Create a MySQL database named ATMSystem
-2. Import the database dump to set up the tables and sample data
-3. The default connection in DBConnection.java uses root with no password. Update this if your setup differs
-4. Run the application
+1. Start MySQL. if you are using XAMPP, open it and start the MySQL Database server
+2. Open phpMyAdmin by going to http://localhost/phpmyadmin in your browser
+3. Create a new database named ATMSystem
+4. Click on ATMSystem in the left sidebar, then click the Import tab, choose ATMSystem.sql and click Go to set up the tables and sample data
+5. The default connection in DBConnection.java uses root with no password. Update this if your setup differs
+6. Run the application:
 ```bash
 java -cp "src:lib/mysql-connector-j-9.6.0.jar" atmsystem.Main
 ```
