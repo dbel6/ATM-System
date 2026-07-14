@@ -113,6 +113,8 @@ java -cp "src;lib/mysql-connector-j-9.6.0.jar" atmsystem.Main
 │       ├── Card.java                    # Card data model
 │       ├── Customer.java                # Customer data model
 │       └── Transaction.java             # Transaction data model
+├── ATMSystem.sql                        # Database dump with table structures and sample data
+├── OOSD_Project_Documentation.docx      # Full project documentation including ER diagram and test cases
 └── README.md
 ```
 
